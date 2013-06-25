@@ -72,5 +72,16 @@ module Enki
 
     # Version of your assets, change this if you want to expire all your assets
     config.assets.version = '1.0'
+
+    config.assets.precompile += %w(
+      humanmsg.css
+      admin.css
+      application.css.scss
+      login.css
+      admin.js
+      application.js
+      common.js
+      live-comment-preview.js
+    )
   end
 end
