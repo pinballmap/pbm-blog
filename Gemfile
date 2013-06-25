@@ -13,6 +13,7 @@ end
 
 platforms :ruby do
   gem 'sqlite3'
+  gem 'pg'
 end
 
 platforms :jruby do
