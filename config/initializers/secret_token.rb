@@ -7,6 +7,6 @@ else
   if secret.length < 30
     raise "Secret token cannot be loaded"
   else
-    Myapp::Application.config.secret_token = secret
+    Enki::Application.config.secret_token = secret
   end
 end
