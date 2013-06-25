@@ -68,6 +68,8 @@ GEM
     erubis (2.7.0)
     exception_notification (2.5.2)
       actionmailer (>= 3.0.4)
+    execjs (1.4.0)
+      multi_json (~> 1.0)
     factory_girl (2.4.2)
       activesupport
     ffi (1.0.11)
@@ -179,6 +181,9 @@ GEM
       trinidad_jars (>= 1.0.1)
     trinidad_jars (1.0.2)
     tzinfo (0.3.35)
+    uglifier (2.1.1)
+      execjs (>= 0.3.0)
+      multi_json (~> 1.0, >= 1.0.2)
     webrat (0.7.3)
       nokogiri (>= 1.2.0)
       rack (>= 1.0)
@@ -215,5 +220,6 @@ DEPENDENCIES
   ruby-openid
   sass-rails (~> 3.2.3)
   trinidad
+  uglifier
   webrat
   will_paginate (~> 3.0.2)
