@@ -10,6 +10,7 @@ gem 'rails', '~> 3.2'
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
   gem 'uglifier'
+  gem 'compass-rails'
 end
 
 platforms :ruby do
@@ -17,12 +18,12 @@ platforms :ruby do
 end
 
 platforms :jruby do
-  gem 'activerecord-jdbcsqlite3-adapter'
   gem 'trinidad'
   gem 'jruby-openssl'
 end
 
 gem 'jquery-rails'
+gem 'thin'
 
 # Use unicorn as the web server
 # gem 'unicorn'
