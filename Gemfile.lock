@@ -224,7 +224,7 @@ DEPENDENCIES
   open_id_authentication
   pg
   rack-openid
-  rails (~> 3.2)
+  rails (= 3.2.11)
   rspec
   rspec-rails
   ruby-openid
