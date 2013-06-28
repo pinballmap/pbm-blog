@@ -11,8 +11,11 @@
 </head>
 <body>
   <div id="page_container">
+     <div id="header">
+        <a class="page_heading" href="<%= root_url %>"><%= enki_config[:title] %></a>
+        <a href="http://pinballmap.com"><%= image_tag('pinballmapcom.jpg') %></a>
+      </div>
     <div id="content">
-      <h1 id="page_heading"><a href="<%= root_url %>"><%= enki_config[:title] %></a></h1>
 
       <div id="main">
         <%= yield %>
