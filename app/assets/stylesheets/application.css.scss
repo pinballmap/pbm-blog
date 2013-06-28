@@ -11,12 +11,15 @@
  *= require_self
  */
 
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+
 /* High level containers */
 body
 {
-  color: black;
-
-  font: normal 12px verdana, arial, helvetica, sans-serif;
+  background:url(asset-path('PPM-SplashTile-BW-Inverted.png', image)) repeat;
+  background-color: #FFFFFF;
+  color: #180E03;
+  font: normal 14px 'Open Sans', Helvetica, Arial, sans-serif;
   line-height: 1.5;
   padding: 0px;
   margin: 0px;
@@ -28,15 +31,21 @@ body
   min-height: 400px;
 
   color: black;
-	width: 100%;
+  width: 100%;
+}
+
+.post {
+  background: none repeat scroll 0 0 rgba(233, 222, 209, 0.7);
+  padding: 1px 10px;
+  margin-bottom: 20px;
 }
 
 #content {
-	width: 900px;
-  margin: 5px auto;
-	position: relative;
-	padding-right: 55px;
-/*	display: inline;*/
+  width: 900px;
+  margin: 20px auto;
+  position: relative;
+  padding-right: 55px;
+/*  display: inline;*/
 }
 
 #footer
@@ -52,10 +61,48 @@ body
 }
 
 /* Headings */
-h1#page_heading
-{
-  font-size: 24pt;
-	color: #000 !important;
+#header {
+  margin: -5px auto 0;
+  width: 100%;
+  min-width: 915px;
+  height: 55px;
+  background: #c7c5c7;
+  box-shadow: 0 0 25px rgba(90, 100, 117, 0.5);
+  border-bottom: 5px solid transparent;
+    -moz-background-clip: border;     /* Firefox 3.6 */
+        -webkit-background-clip: border;  /* Safari 4? Chrome 6? */
+        background-clip: border-box;      /* Firefox 4, Safari 5, Opera 10, IE 9 */
+
+        -moz-background-clip: padding;     /* Firefox 3.6 */
+        -webkit-background-clip: padding;  /* Safari 4? Chrome 6? */
+        background-clip: padding-box;      /* Firefox 4, Safari 5, Opera 10, IE 9 */
+
+        -moz-background-clip: content;     /* Firefox 3.6 */
+        -webkit-background-clip: content;  /* Safari 4? Chrome 6? */
+        background-clip: content-box;      /* Firefox 4, Safari 5, Opera 10, IE 9 */
+}
+
+#header a img {
+    border: 0 none;
+    float: right;
+    margin: 0 auto;
+    padding: 5px 13px 0 0;
+    width: 464px;
+}
+
+.page_heading {
+  font-size: 28px;
+  color: #FFFFCC !important;
+  margin-top: 0;
+  margin-left: 5%;
+  padding: 0;
+  text-shadow: 0.1em 0.1em 0.2em black;
+  position: absolute;
+  top: 0;
+}
+
+.page_heading a:hover {
+  text-decoration: none;
 }
 
 h2
@@ -94,7 +141,7 @@ strong
 
 a
 {
-  color: #000051;
+  color: #58266F;
 
   text-decoration: none;
 }
@@ -106,7 +153,8 @@ small a, label a
 
 a:hover
 {
-  text-decoration: underline;
+  color: #8a3cae;
+  text-decoration: none;
 }
 
 #footer a
@@ -125,10 +173,11 @@ img
 {
   position: absolute;
   width: 15em;
-  top: -1px;
+  top: 0;
   right: -1px;
-
-  border: none;
+  background-color: #DBD9D7;
+  border: 1px solid #CBC8C5;
+  box-shadow: 0 4px 5px rgba(90, 100, 117, 0.3);
   padding: 5px;
 }
 
@@ -169,8 +218,8 @@ img
 #navigation input
 {
   border: solid 1px black;
-  width: 100%;
-	margin-left: 10px;
+  width: 90%;
+  margin-left: 10px;
 }
 
 #navigation form
@@ -180,7 +229,7 @@ img
 
 #main
 {
-  padding-right: 150px;
+  padding-right: 180px;
   padding-left: 0px;
   padding-top: 0px;
   padding-bottom: 40px;
@@ -201,7 +250,7 @@ div.meta
   padding-bottom: 0.5em;
   display: inline;
   color: #cccccc;
-	font-size: 9pt;
+  font-size: 9pt;
 }
 .archive-month .tags
 {
@@ -279,8 +328,8 @@ textarea
 
 div.date
 {
-	color: #999;
-	font-size: .8em;
+  color: #999;
+  font-size: .8em;
 }
 
 div.comments div.body
