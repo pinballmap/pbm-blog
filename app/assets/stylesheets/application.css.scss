@@ -12,6 +12,8 @@
  */
 
 @import url(http://fonts.googleapis.com/css?family=Open+Sans);
+@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
+
 
 /* High level containers */
 body
@@ -19,8 +21,8 @@ body
   background:url(asset-path('PPM-SplashTile-BW-Inverted.png', image)) repeat;
   background-color: #FFFFFF;
   color: #180E03;
-  font: normal 14px 'Open Sans', Helvetica, Arial, sans-serif;
-  line-height: 1.5;
+  font: normal 16px 'Open Sans', Helvetica, Arial, sans-serif;
+  line-height: 1.8;
   padding: 0px;
   margin: 0px;
 }
@@ -29,22 +31,20 @@ body
 {
   position: absolute;
   min-height: 400px;
-
-  color: black;
+  color: #5C462C;
   width: 100%;
 }
 
 .post {
   background: none repeat scroll 0 0 rgba(233, 222, 209, 0.7);
-  padding: 1px 10px;
+  padding: 1px 15px;
   margin-bottom: 20px;
 }
 
 #content {
-  width: 900px;
-  margin: 20px auto;
-  position: relative;
-  padding-right: 55px;
+margin: 20px auto;
+position: relative;
+width: 900px;
 /*  display: inline;*/
 }
 
@@ -99,6 +99,7 @@ body
   text-shadow: 0.1em 0.1em 0.2em black;
   position: absolute;
   top: 0;
+  line-height: 40px;
 }
 
 .page_heading a:hover {
@@ -107,13 +108,17 @@ body
 
 h2
 {
-  font-size: 1.4em;
-  color: #333333;
+font-family: 'Montserrat';
+color: #706B65;
+font-size: 24px;
+font-weight: bold;
+text-shadow: 0.1px 0.1px 0.1px white;
+margin-top: 5px;
 }
 
 h2 a, h3, h4, h5
 {
-  color: #333333;
+  color: #706B65;
 }
 
 /* Text */
@@ -172,7 +177,7 @@ img
 #navigation
 {
   position: absolute;
-  width: 15em;
+  width: 225px;
   top: 0;
   right: -1px;
   background-color: #DBD9D7;
@@ -229,10 +234,11 @@ img
 
 #main
 {
-  padding-right: 180px;
-  padding-left: 0px;
-  padding-top: 0px;
-  padding-bottom: 40px;
+padding: 0 0 40px;
+}
+
+#main .post {
+width: 620px;
 }
 
 div.meta
@@ -249,7 +255,7 @@ div.meta
   padding-left: 0em;
   padding-bottom: 0.5em;
   display: inline;
-  color: #cccccc;
+  color: #706B65;
   font-size: 9pt;
 }
 .archive-month .tags
