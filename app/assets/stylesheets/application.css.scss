@@ -22,7 +22,7 @@ body
   background-color: #FFFFFF;
   color: #180E03;
   font: normal 16px 'Open Sans', Helvetica, Arial, sans-serif;
-  line-height: 1.8;
+  line-height: 1.7;
   padding: 0px;
   margin: 0px;
 }
@@ -126,7 +126,7 @@ p
 {
   padding: 0px;
   margin-top: 0.5em;
-  margin-bottom: 1em;
+  margin-bottom: 1.2em;
   margin-left: 0px;
   margin-right: 0px;
 }
@@ -222,7 +222,8 @@ img
 
 #navigation input
 {
-  border: solid 1px black;
+  background-color: #FCFCF3;
+  border: 1px solid #D56C24;
   width: 90%;
   margin-left: 10px;
 }
