@@ -35,12 +35,6 @@ body
   width: 100%;
 }
 
-.post {
-  background: none repeat scroll 0 0 rgba(233, 222, 209, 0.7);
-  padding: 1px 15px;
-  margin-bottom: 20px;
-}
-
 #content {
 margin: 20px auto;
 position: relative;
@@ -235,11 +229,10 @@ img
 
 #main
 {
-padding: 0 0 40px;
-}
-
-#main .post {
+padding: 1px 15px;
 width: 620px;
+background: none repeat scroll 0 0 rgba(233, 222, 209, 0.7);
+margin-bottom: 20px;
 }
 
 div.meta
