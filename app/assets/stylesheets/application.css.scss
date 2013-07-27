@@ -22,7 +22,7 @@ body
   background-color: #FFFFFF;
   color: #180E03;
   font: normal 16px 'Open Sans', Helvetica, Arial, sans-serif;
-  line-height: 1.7;
+  line-height: 1.6;
   padding: 0px;
   margin: 0px;
 }
@@ -127,7 +127,7 @@ p
 
 strong
 {
-  color: #333333;
+  color: #5C462C;
 }
 /* Links */
 .openid
@@ -352,6 +352,15 @@ div.comments div.meta
 div.comments div.separator
 {
   height: 10px;
+}
+
+#comments li {
+    padding: 5px 10px;
+    margin: 10px 0;
+}
+
+#comments p {
+    margin: 10px 0 0;
 }
 
 div.errors

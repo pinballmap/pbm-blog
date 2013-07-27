@@ -5,7 +5,7 @@
 <%= render @post %>
 
 <ol id="comments" class="commentlist">
-  <% @post.approved_comments.each do |comment| -%>
+  <% @post.approved_comments.all(:order => 'created_at ASC').each do |comment| -%>
     <li<%=raw cycle(' class="alt"', '') %> id="comment-<%= comment.id %>">
       <%= render comment %>
     </li>
