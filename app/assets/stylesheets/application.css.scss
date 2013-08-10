@@ -22,7 +22,7 @@ body
   background-color: #FFFFFF;
   color: #180E03;
   font: normal 16px 'Open Sans', Helvetica, Arial, sans-serif;
-  line-height: 1.7;
+  line-height: 1.6;
   padding: 0px;
   margin: 0px;
 }
@@ -119,15 +119,12 @@ h2 a, h3, h4, h5
 p
 {
   padding: 0px;
-  margin-top: 0.5em;
-  margin-bottom: 1.2em;
-  margin-left: 0px;
-  margin-right: 0px;
+  margin: 0.5em 0 1.2em 0;
 }
 
 strong
 {
-  color: #333333;
+  color: #5C462C;
 }
 /* Links */
 .openid
@@ -165,6 +162,10 @@ a:hover
 img
 {
   border: solid 1px black;
+}
+
+#disqus_thread {
+  margin-top: 20px;
 }
 
 /* Two columns */
@@ -222,6 +223,8 @@ img
   border: 1px solid #D56C24;
   width: 90%;
   margin-left: 10px;
+  height: 20px;
+  font-size: 16px;
 }
 
 #navigation form
@@ -244,7 +247,7 @@ margin-bottom: 20px;
 div.meta
 {
  margin-top: 1em;
- margin-bottom: 3em;
+ margin-bottom: 2em;
 }
 /* Formatting */
 
@@ -256,7 +259,7 @@ div.meta
   padding-bottom: 0.5em;
   display: inline;
   color: #706B65;
-  font-size: 9pt;
+  font-size: 14px;
 }
 .archive-month .tags
 {
@@ -265,7 +268,7 @@ div.meta
 
 .meta a, .archive-month .tags a
 {
-  color: #bbbbbb;
+  color: #58266F;
   border-bottom: dotted 1px #bbbbbb;
 }
 
@@ -354,6 +357,15 @@ div.comments div.separator
   height: 10px;
 }
 
+#comments li {
+    padding: 5px 10px;
+    margin: 10px 0;
+}
+
+#comments p {
+    margin: 10px 0 0;
+}
+
 div.errors
 {
   border: solid 1px red;
@@ -392,7 +404,7 @@ hr
 }
 
 .related {
-  background-color: #f8f8f8;
+background-color: #ffecd6;
   border: 1px solid silver;
   padding: 10px;
 }
