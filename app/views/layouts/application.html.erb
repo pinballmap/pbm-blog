@@ -22,7 +22,7 @@
       </div>
 
       <div id="navigation">
-        <h2>Pages</h2>
+        <h2>Go to...</h2>
         <ul>
           <% page_links_for_navigation.each do |link| -%>
             <li><%= link_to(link.name, link.url) %></li>
@@ -35,6 +35,10 @@
               <li><%= link_to(link.name, link.url) %></li>
             <% end -%>
           </ul>
+          <h2>RSS</h2>
+          <ul>
+            <li><a href="http://blog.pinballmap.com/posts.atom">Click here to subscribe</a></li>          
+           </ul>
         <% end -%>
         <form method="get" id="sform" action="http://www.google.com/search">
           <div>
