@@ -1,7 +1,7 @@
 <% content_for(:page_title) do -%>
   <%= archives_title %>
 <% end -%>
-
+<div class="post">
 <h2>Archives</h2>
 
 <% if @months.empty? -%>
@@ -16,5 +16,5 @@
 	  <% end -%>
 	</ul>
 	<% end -%>
-
+</div>
 <% end -%>
