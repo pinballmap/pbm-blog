@@ -10,7 +10,7 @@
 	<p>There are no posts yet.</p>
 <% else -%>
 	<% @posts.each do |post| -%>
-	<div class="post" id="<%= dom_id(post) %>">
+	<div id="<%= dom_id(post) %>">
 	  <%= render post %>
 	</div>
 	<% end -%>
