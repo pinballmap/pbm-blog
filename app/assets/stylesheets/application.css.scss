@@ -165,17 +165,16 @@ img
 }
 
 #disqus_thread {
-background-color: rgba(255,244,231,0.9);
-background: rgb(255,244,231) transparent;
-background: rgba(255,244,231,0.9);
-filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#9fff4e7, endColorstr=#9fff4e7);
--ms-filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#9fff4e7, endColorstr=#9fff4e7);
-border-top: 4px solid #E3E1E0;
-border-left: 1px solid #ffe4c5;
-border-right: 1px solid #ffe4c5;
-border-bottom: 1px solid #ffe4c5;
+background: none repeat scroll 0 0 #FFFCF8;
+border-color: #FFECD6;
+border-style: solid;
+border-width: 4px 1px 1px;
 margin-top: -12px;
 padding: 20px;
+}
+
+#discovery {
+  border-top: 2px solid rgba(0, 49, 79, 0.08);
 }
 
 /* Two columns */
@@ -424,9 +423,8 @@ hr
 .related {
 background-color: #E3E1E0;
 border: 1px solid silver;
-margin-bottom: 10px;
+margin: 20px 0 10px 0;
 padding: 10px;
-width: 628px;
 }
 
 /* Syntax */
