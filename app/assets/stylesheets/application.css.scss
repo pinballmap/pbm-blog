@@ -14,11 +14,11 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans);
 @import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
 
-
 /* High level containers */
 body
 {
   background:url(asset-path('PPM-SplashTile-BW-Inverted.png', image)) repeat;
+  background-size: 4px;
   background-color: #FFFFFF;
   color: #180E03;
   font: normal 16px 'Open Sans', Helvetica, Arial, sans-serif;
@@ -39,19 +39,16 @@ body
 margin: 20px auto;
 position: relative;
 width: 900px;
-/*  display: inline;*/
 }
 
 #footer
 {
   position: relative;
   font-size: 8pt;
-/*  padding-top: 5px;*/
   padding-right: 15px;
   padding-bottom: 5px;
   padding-left: 5px;
   color: gray;
-/*  border-bottom: solid 1px #aaaaaa;*/
 }
 
 /* Headings */
@@ -60,20 +57,9 @@ width: 900px;
   width: 100%;
   min-width: 915px;
   height: 55px;
-  background: #c7c5c7;
-  box-shadow: 0 0 25px rgba(90, 100, 117, 0.5);
-  border-bottom: 5px solid transparent;
-    -moz-background-clip: border;     /* Firefox 3.6 */
-        -webkit-background-clip: border;  /* Safari 4? Chrome 6? */
-        background-clip: border-box;      /* Firefox 4, Safari 5, Opera 10, IE 9 */
-
-        -moz-background-clip: padding;     /* Firefox 3.6 */
-        -webkit-background-clip: padding;  /* Safari 4? Chrome 6? */
-        background-clip: padding-box;      /* Firefox 4, Safari 5, Opera 10, IE 9 */
-
-        -moz-background-clip: content;     /* Firefox 3.6 */
-        -webkit-background-clip: content;  /* Safari 4? Chrome 6? */
-        background-clip: content-box;      /* Firefox 4, Safari 5, Opera 10, IE 9 */
+  background: none repeat scroll 0 0 #FFFFFF;
+  border-bottom: 5px solid #D8C6AE;
+  box-shadow: 0 0 15px rgba(90, 100, 117, 0.5);
 }
 
 #header a img {
@@ -86,11 +72,11 @@ width: 900px;
 
 .page_heading {
   font-size: 28px;
-  color: #FFFFCC !important;
+  color: #58266F !important;
   margin-top: 0;
   margin-left: 5%;
   padding: 0;
-  text-shadow: 0.1em 0.1em 0.2em black;
+  text-shadow: 1px 1px 5px #CCCCCC;
   position: absolute;
   top: 0;
   line-height: 40px;
@@ -179,15 +165,12 @@ padding: 20px;
 /* Two columns */
 #navigation
 {
+  background-color: #ECE2D8;
+  border: 2px solid #FDFCFE;
   position: absolute;
   width: 225px;
   top: 0;
   right: -1px;
-  background-color: #e3e1e0;
-  border: 1px solid #d3d0ce;
-  box-shadow: 0 4px 5px rgba(90, 100, 117, 0.3);
-  -mox-box-shadow: 0 4px 5px rgba(90, 100, 117, 0.3);
-  -webkit-box-shadow: 0 4px 5px rgba(90, 100, 117, 0.3);
   padding: 5px;
 }
 
@@ -250,14 +233,13 @@ margin-bottom: 20px;
 }
 
 .post {
-border: 1px solid #ffe4c5;
+background: none repeat scroll 0 0 rgba(253, 252, 254, 0.7);
+border: 2px solid #E3D6C5;
 margin-bottom: 10px;
 padding: 1px 15px;
-background-color: rgba(255,244,231,0.9);
-background: rgb(255,244,231) transparent;
-background: rgba(255,244,231,0.9);
-filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#9fff4e7, endColorstr=#9fff4e7);
--ms-filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#9fff4e7, endColorstr=#9fff4e7);
+box-shadow: 0 4px 5px rgba(90, 100, 117, 0.3);
+-moz-box-shadow: 0 4px 5px rgba(90, 100, 117, 0.3);
+-webkit-box-shadow: 0 4px 5px rgba(90, 100, 117, 0.3);
 }
 
 div.meta
