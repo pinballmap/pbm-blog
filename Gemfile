@@ -3,6 +3,8 @@ ruby '1.9.3'
 
 gem 'rails', '3.2.11'
 
+gem 'puma'
+
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
@@ -25,15 +27,6 @@ end
 
 gem 'jquery-rails'
 gem 'thin'
-
-# Use unicorn as the web server
-# gem 'unicorn'
-
-# Deploy with Capistrano
-# gem 'capistrano'
-
-# To use debugger
-# gem 'ruby-debug'
 
 # Bundle the extra gems:
 gem 'RedCloth', '~> 4.2.9', :require => 'redcloth'
