@@ -28,6 +28,8 @@ end
 gem 'jquery-rails'
 gem 'thin'
 
+gem 'rails_12factor'
+
 # Bundle the extra gems:
 gem 'RedCloth', '~> 4.2.9', :require => 'redcloth'
 gem 'ruby-openid', :require => 'openid'
