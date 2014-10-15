@@ -74,6 +74,10 @@ width: 900px;
     width: 464px;
 }
 
+#header a {
+  padding: 0 5px;
+}
+
 .page_heading {
   font-size: 28px;
   color: #58266F !important;
@@ -571,9 +575,6 @@ ol.CodeRay li { white-space: pre }
   #header {
     min-width: 320px;
   }
-  #header a {
-    padding: 0 5px;
-  }
   #header a img {
     max-width: 100%;
     padding: 0;
@@ -590,6 +591,6 @@ ol.CodeRay li { white-space: pre }
     height: 89px;
   }
   #header a {
-  padding: 0;
+    padding: 0;
   }
 }
