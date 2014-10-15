@@ -565,12 +565,16 @@ ol.CodeRay li { white-space: pre }
     width: auto;
   }
   #main {
+    max-width: 648px;
     width: auto;
+    margin: 0 auto
   }
   #navigation {
     position: relative;
     width: auto;
-    margin: 0 auto
+    margin: 0 auto;
+    max-width: 648px;
+    padding: 0;
   }
   #header {
     min-width: 320px;
@@ -579,18 +583,22 @@ ol.CodeRay li { white-space: pre }
     max-width: 100%;
     padding: 0;
   }
+  #header a {
+    padding: 0;
+  }
   #navigation input {
     width: 200px;
+    padding: 0;
   }
   #footer {
     background: #ffffff;
   }
 }
-@media (max-width: 720px) { 
+@media (max-width: 705px) { 
   #header {
     height: 89px;
   }
   #header a {
-    padding: 0;
+    display: block;
   }
 }
