@@ -58,10 +58,11 @@ width: 900px;
 
 /* Headings */
 #header {
-  margin: -5px auto 0;
+  margin: 0 auto;
   width: 100%;
   min-width: 915px;
-  height: 54px;
+  height: 49px;
+  text-align: center;
   background: none repeat scroll 0 0 #FFFFFF;
   border-bottom: 5px solid #D8C6AE;
   box-shadow: 0 0 15px rgba(90, 100, 117, 0.5);
@@ -69,22 +70,17 @@ width: 900px;
 
 #header a img {
     border: 0 none;
-    float: right;
     margin: 0 auto;
-    padding: 5px 13px 0 0;
     width: 464px;
 }
 
 .page_heading {
   font-size: 28px;
   color: #58266F !important;
-  margin-top: 2px;
-  margin-left: 5%;
   padding: 0;
   text-shadow: 1px 1px 5px #CCCCCC;
-  position: absolute;
-  top: 0;
   line-height: 40px;
+  vertical-align: top;
 }
 
 .page_heading a:hover {
@@ -559,3 +555,41 @@ ol.CodeRay li { white-space: pre }
 .v  { color:#036 }
 .xt { color:#444 }
 
+@media (max-width: 900px) { 
+  #content {
+    margin: 5px;
+    width: auto;
+  }
+  #main {
+    width: auto;
+  }
+  #navigation {
+    position: relative;
+    width: auto;
+    margin: 0 auto
+  }
+  #header {
+    min-width: 320px;
+  }
+  #header a {
+    padding: 0 5px;
+  }
+  #header a img {
+    max-width: 100%;
+    padding: 0;
+  }
+  #navigation input {
+    width: 200px;
+  }
+  #footer {
+    background: #ffffff;
+  }
+}
+@media (max-width: 720px) { 
+  #header {
+    height: 89px;
+  }
+  #header a {
+  padding: 0;
+  }
+}
