@@ -579,9 +579,10 @@ ol.CodeRay li { white-space: pre }
   #header {
     min-width: 320px;
   }
-  #header a img {
-    max-width: 100%;
+  #header a img, img {
+    max-width: 100% !important;
     padding: 0;
+    height: auto !important;
   }
   #header a {
     padding: 0;
