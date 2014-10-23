@@ -50,9 +50,6 @@ width: 900px;
 {
   position: relative;
   font-size: 8pt;
-  padding-right: 15px;
-  padding-bottom: 5px;
-  padding-left: 5px;
   color: gray;
 }
 
@@ -177,8 +174,8 @@ box-shadow: 0 4px 5px rgba(90, 100, 117, 0.3);
   border: 2px solid #FDFCFE;
   position: absolute;
   width: 225px;
-  top: 0;
   right: -1px;
+  top: 0;
   padding: 5px;
 }
 
@@ -198,7 +195,6 @@ box-shadow: 0 4px 5px rgba(90, 100, 117, 0.3);
 #navigation ul
 {
   padding-left: 10px;
-
   margin-left: 0px;
   margin-top: 0px;
   list-style: none;
@@ -561,7 +557,7 @@ ol.CodeRay li { white-space: pre }
 
 @media (max-width: 900px) { 
   #content {
-    margin: 5px;
+    margin: 20px 5px 5px;
     width: auto;
   }
   #main {
@@ -575,6 +571,7 @@ ol.CodeRay li { white-space: pre }
     margin: 0 auto;
     max-width: 648px;
     padding: 0;
+    right: 0;
   }
   #header {
     min-width: 320px;
@@ -583,6 +580,7 @@ ol.CodeRay li { white-space: pre }
     max-width: 100% !important;
     padding: 0;
     height: auto !important;
+    margin-left: 0 !important;
   }
   #header a {
     padding: 0;
@@ -593,13 +591,31 @@ ol.CodeRay li { white-space: pre }
   }
   #footer {
     background: #ffffff;
+    max-width: 648px;
+    border-left: 2px solid #ffffff;
+    border-right: 2px solid #ffffff;
+    margin: 0 auto;
   }
 }
 @media (max-width: 705px) { 
   #header {
-    height: 89px;
+    max-height: 89px;
+    height: 100%;
+    background: none;
+    border-bottom: none;
+    box-shadow: none;
+    margin-bottom: 10px;
   }
   #header a {
     display: block;
+    background: #ffffff;
+  }
+  #header a:nth-child(2) {
+    border-bottom: 5px solid #D8C6AE;
+    width: 100%;
+    line-height: 12px;
+  }
+  #content {
+    margin: 5px;
   }
 }
