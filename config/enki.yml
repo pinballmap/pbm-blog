@@ -6,8 +6,8 @@ author:
   name:    Pinball Map Blog # For copyright notice and ATOM feeds
   email:   master.cob@gmail.com # Exception emails will go here, and it is used in ATOM feeds
   open_id:                  # These are used to login to the admin area
-      - https://www.flickr.com/photos/gratzer
-      - https://www.flickr.com/photos/milkundcheese
+      - http://www.flickr.com/photos/gratzer
+      - http://www.flickr.com/photos/milkundcheese
       - https://profiles.google.com/111209230997429502793 #scott
       - https://profiles.google.com/111944412963212113223 #ryan
       - https://profiles.google.com/111209230997429502793 #scott
