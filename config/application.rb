@@ -1,23 +1,22 @@
 require File.expand_path('../boot', __FILE__)
 
-# Pick the frameworks you want:
-require "active_record/railtie"
-require "action_controller/railtie"
-require "action_mailer/railtie"
-require "active_resource/railtie"
-require "sprockets/railtie"
-# require "rails/test_unit/railtie"
-
-# Bundler 1.0.10 incorrectly activates the new experimental Psych YAML parser
-# in 1.9.2, which breaks on RedCloth. This hack reverts it, but can be removed
-# once it is all sorted out. The const_defined check is required for 1.8.7 compat.
-YAML::ENGINE.yamler = "syck" if YAML.const_defined?("ENGINE")
+require 'rails/all'
 
 if defined?(Bundler)
-  # If you precompile assets before deploying to production, use this line
-  Bundler.require(*Rails.groups(:assets => %w(development test)))
-  # If you want your assets lazily compiled in production, use this line
-  # Bundler.require(:default, :assets, Rails.env)
+  Bundler.require(:default, Rails.env)
+end
+
+# Make google_oauth2.yml values available as ENV values (used with the google_oauth2 OmniAuth strategy).
+# If deploying to Heroku, you will need to set the two required ENV values manually for Heroku, for example:
+# heroku config:set GOOGLE_CLIENT_ID=my_client_id
+# heroku config:set GOOGLE_CLIENT_SECRET=my_client_secret
+if File.exists?(File.expand_path('../google_oauth2.yml', __FILE__))
+  config = YAML.load(File.read(File.expand_path('../google_oauth2.yml', __FILE__)))
+  config.merge! config.fetch(Rails.env, {})
+
+  config.each do |key, value|
+    ENV[key] ||= value.to_s unless value.kind_of? Hash
+  end
 end
 
 # This configures the base path of routes for the main application.
