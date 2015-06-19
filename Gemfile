@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 ruby '1.9.3'
 
-gem 'rails', '3.2.11'
+gem 'rails', '~> 4.0.0'
 
 gem 'puma'
 
@@ -10,17 +10,15 @@ gem 'puma'
 
 # Gems used only for assets and not required
 # in production environments by default.
-group :assets do
-  gem 'sass-rails',   '~> 3.2.3'
-  gem 'uglifier'
-  gem 'compass-rails'
-end
+gem 'sass-rails'
 
 platforms :ruby do
   gem 'pg'
 end
 
 platforms :jruby do
+  # The stable version has not yet supported Rails 4
+  gem 'activerecord-jdbcsqlite3-adapter', '1.3.0.beta2'
   gem 'trinidad'
   gem 'jruby-openssl'
 end
@@ -40,7 +38,9 @@ gem 'lesstile', '~> 1.1.0'
 gem 'formtastic'
 gem 'will_paginate', '~> 3.0.2'
 gem 'exception_notification', '~> 2.5.2'
-gem 'open_id_authentication'
+gem 'omniauth'
+gem 'omniauth-google-oauth2'
+gem 'omniauth-openid'
 
 # Bundle gems for the local environment. Make sure to
 # put test-only gems in this group so their generators
@@ -54,6 +54,11 @@ group :test do
   gem 'nokogiri', '~> 1.5.0'
   gem 'webrat'
 end
+
+# Uncomment if you want easy profiling in development.
+#group :development do
+#  gem 'rack-mini-profiler'
+#end
 
 group :development, :test do
   gem 'rspec-rails'

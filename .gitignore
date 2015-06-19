@@ -7,3 +7,5 @@ tmp/**/*
 public/uploads/
 database.yml
 .DS_Store
+defensio.yml
+google_oauth2.yml
