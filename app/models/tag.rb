@@ -20,7 +20,7 @@ class Tag < ActiveRecord::Base
 
   # LIKE is used for cross-database case-insensitivity
   def self.find_or_create_with_like_by_name(name)
-    find(:first, :conditions => ["name LIKE ?", name]) || create(:name => name)
+    where('name LIKE ?', name).first || create(:name => name)
   end
 
   def ==(object)
@@ -33,5 +33,11 @@ class Tag < ActiveRecord::Base
 
   def count
     read_attribute(:count).to_i
+  end
+
+  def self.filter_name(tag_name)
+    tag_name.gsub!('&', 'and')               # Replace & with 'and'.
+    tag_name.gsub!(/[^A-Za-z0-9_ \.-]/, '')  # Get rid of anything other than these allowed characters.
+    tag_name
   end
 end
