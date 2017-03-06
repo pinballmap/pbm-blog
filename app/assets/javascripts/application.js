@@ -15,3 +15,9 @@
 //= require common
 //= require live-comment-preview
 //= require_self
+
+$().ready(function() {
+
+  $("#nav").addClass("js").before('<div id="menu">&#9776;</div>');
+    
+});
