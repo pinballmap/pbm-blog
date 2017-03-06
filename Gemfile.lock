@@ -220,9 +220,3 @@ DEPENDENCIES
   trinidad
   webrat
   will_paginate (~> 3.0.2)
-
-RUBY VERSION
-   ruby 1.9.3p545
-
-BUNDLED WITH
-   1.13.6
