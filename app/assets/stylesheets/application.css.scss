@@ -13,9 +13,10 @@
 
 @font-face {
   font-family: 'Freight-MedSC';
-  src: url("freight-sans-medium-sc-opentype.otf");
+  src: url('freight-sans-medium-sc-opentype.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
 }
-
 /* High level containers */
 body
 {
@@ -178,11 +179,12 @@ strong
   box-sizing: border-box;
 }
 #header .menu_link ul li a:hover {
-  color: #303030;
+  color: #F53240;
   background-color: #d3ecff;
 }
 #header .menu_home ul li a {
   background-color: #D3ECFF;
+  color: #303030;
 }
 #header .menu_home ul li a:hover {
   background-color: #EFEFEF;
@@ -635,7 +637,7 @@ ol.CodeRay li { white-space: pre }
 .v  { color:#036 }
 .xt { color:#444 }
 
-@media (max-width: 900px) { 
+@media (max-width: 900px) {
   #content {
     margin: 20px 5px 5px;
     width: auto;
@@ -686,7 +688,7 @@ ol.CodeRay li { white-space: pre }
     margin: 0 auto;
   }
 }
-@media (max-width: 705px) { 
+@media (max-width: 705px) {
   #header {
     max-height: 89px;
     height: 100%;
@@ -715,7 +717,7 @@ ol.CodeRay li { white-space: pre }
     margin-top: 10px;
   }
 }
-@media (max-width: 520px) { 
+@media (max-width: 520px) {
   .page_heading {
     font-size: 16px;
     width: 80px;
@@ -737,7 +739,7 @@ ol.CodeRay li { white-space: pre }
     margin-top: 5px;
   }
 }
-@media (max-width: 450px) { 
+@media (max-width: 450px) {
   .page_heading {
     font-size: 13px;
     width: 70px;
