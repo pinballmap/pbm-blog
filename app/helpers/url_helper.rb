@@ -27,14 +27,4 @@ module UrlHelper
     end
   end
 
-  def link_to_post_comments(post)
-    link_text = pluralize(post.approved_comments.size, "comment")
-    if post.published?
-      link_to(link_text, post_path(post, :anchor => 'disqus_thread'))
-    else
-      # Posts would have to be published to be on the public index,
-      # the only place where a fragment won't work.
-      link_to(link_text, '#disqus_thread')
-    end
-  end
 end
