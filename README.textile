@@ -1,1 +1,1 @@
-h1. PBM BLOG!!
+This is the old Pinball Map blog that used enki. We are currently using jekyll instead.
